@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blogging</title>
+  <title> Sourabh - Front end, Backend Developer</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main-navigation" class="clearfix">
+		<%=  link_to "Sourabh Garg", root_path, class: "name" %>
+		<nav>
+
+    <%= link_to "Articles", posts_path %>
+    <a href="">Projects</a>
+    <a href="">Contact</a>
+</nav>
+</header>
 
 <%= yield %>
-
+<footer id="main-footer">
+		<p id="copyright">&copy; 2016 Sourabh Garg
+		</p>
+		<nav>
+			<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+		</nav>
+	</footer>
 </body>
 </html>

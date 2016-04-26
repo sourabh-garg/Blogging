@@ -1,0 +1,30 @@
+<div class="wrapper wrapper-padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45</p>
+		<p>BC,making it over 2000 years old. Richard McClintock, a <a href="">Latin professor </a>at Hampden-Sydney College in Virginia.</p>
+		<p>looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage</p>
+
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuffs I've written</h2>
+		<hr>
+		<% @post.each do |post| %>
+		<h3><%= link_to "#{post.title}", post_path(@post)%></h3>
+		<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuffs I've  built.</h2>
+		<hr>
+		<h3><a href="">Unicast</a></h3>
+		<p class="date">Friday April 10th</p>
+		<h3><a href="">Sourabh garg</a></h3>
+		<p class="date">Friday April 10th</p>
+		<h3><a href="">Learn Ruby!</a></h3>
+		<p class="date">Friday April 10th</p>
+	</div>
+</div>
+
+	
