@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'redcarpet', '~> 3.2.2'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'friendly_id', '~> 5.1.0'
+gem 'will_paginate', '~> 3.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
