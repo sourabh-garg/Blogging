@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'redcarpet', '~> 3.2.2'
 gem 'pygments.rb', '~> 0.6.3'
+gem 'friendly_id', '~> 5.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
